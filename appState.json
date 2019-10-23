@@ -1,0 +1,108 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "b3415ca6-1131-4d6e-8324-dd3bc1037c5a": {
+        "id": "b3415ca6-1131-4d6e-8324-dd3bc1037c5a",
+        "parent": null,
+        "name": "hiru1023_issue733",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "4a19270d-c7fe-477e-981f-db500fec8031"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru1023_issue733"
+      },
+      "4a19270d-c7fe-477e-981f-db500fec8031": {
+        "id": "4a19270d-c7fe-477e-981f-db500fec8031",
+        "parent": "b3415ca6-1131-4d6e-8324-dd3bc1037c5a",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1023_issue733/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1SIGMA733testhirupost",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "b3415ca6-1131-4d6e-8324-dd3bc1037c5a",
+    "openFiles": [
+      "4a19270d-c7fe-477e-981f-db500fec8031"
+    ],
+    "currentFileId": "4a19270d-c7fe-477e-981f-db500fec8031",
+    "resources": {
+      "apigusEast1SIGMA733testhirupost": {
+        "name": "apigusEast1SIGMA733testhirupost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "SIGMA-733",
+          "apiId": "2ey3pzw7tg",
+          "endpointType": "EDGE",
+          "rootResourceId": "xlercklid0",
+          "existingResources": {
+            "/SIGMA-733": "4mkt7n",
+            "/": "xlercklid0"
+          },
+          "resourceMode": 0,
+          "resourceName": "testhiru",
+          "resourcePath": "/testhiru",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "733",
+          "stageDeploymentId": "8zuxs2",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru1023_issue733",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1571831325204
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru1023_issue733",
+      "url": "https://github.com/HirudineeADRT/hiru1023_issue733"
+    }
+  }
+}
